@@ -20,7 +20,8 @@
 .navbar-light .navbar-nav .nav-link.sec-color,
 #nav-join-btn,
 .before-title,
-.title {
+#headline .title,
+#program h6 {
   color: #ec5242;
 }
 
@@ -54,7 +55,7 @@
   height: 100%;
 }
 
-.title {
+#headline .title {
   font-family: 'Cocogoose-Pro', sans-serif;
 }
 
@@ -67,5 +68,27 @@
   font-family: 'Cocogoose-Pro', sans-serif;
   color: #272a31be;
 }
+
+/* main program */
+#program {
+  background-color: #272a31;
+}
+
+#program > * {
+  color: #d3d3d3;
+}
+
+#program .title {
+  font-weight: bold;
+}
+
+#program h6 {
+  margin: 0 8px;
+}
+
+#program p {
+  width: 100%;
+}
+
 
 

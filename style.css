@@ -6,6 +6,11 @@
   font-family: lato, sans-serif;
 }
 
+@font-face {
+  font-family: 'Cocogoose-Pro';
+  src: url('cocogoose/Cocogoose_trial.otf');
+}
+
 .first-color,
 .navbar-light .navbar-nav .nav-link {
   color: #272a31;
@@ -13,13 +18,15 @@
 
 .sec-color,
 .navbar-light .navbar-nav .nav-link.sec-color,
-#nav-join-btn {
+#nav-join-btn,
+.before-title,
+.title {
   color: #ec5242;
 }
 
 /* navbar */
 .navbar {
-  background-color: #d3d3d3;
+  background-color: #eeeeee;
 }
 
 .navbar-light .navbar-toggler {
@@ -36,3 +43,29 @@
   width: 140px;
   text-align: center;
 }
+
+/* headline */
+#headline {
+  background-color: #eeeeee;
+  min-height: 400px;
+}
+
+#headline .content {
+  height: 100%;
+}
+
+.title {
+  font-family: 'Cocogoose-Pro', sans-serif;
+}
+
+.description {
+  padding: 16px;
+  border: 2px solid #ffffff;
+}
+
+.data {
+  font-family: 'Cocogoose-Pro', sans-serif;
+  color: #272a31be;
+}
+
+

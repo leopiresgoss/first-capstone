@@ -90,5 +90,12 @@
   width: 100%;
 }
 
+.join-conference {
+  background-color: #ec5242;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 16px 16px;
+}
+
 
 

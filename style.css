@@ -6,9 +6,33 @@
   font-family: lato, sans-serif;
 }
 
+.first-color,
+.navbar-light .navbar-nav .nav-link {
+  color: #272a31;
+}
+
+.sec-color,
+.navbar-light .navbar-nav .nav-link.sec-color,
+#nav-join-btn {
+  color: #ec5242;
+}
+
 /* navbar */
+.navbar {
+  background-color: #d3d3d3;
+}
+
 .navbar-light .navbar-toggler {
   border: none;
-  color: #272a31;
   font-size: 2em;
+}
+
+.nav-link {
+  font: 2rem;
+}
+
+#nav-join-btn {
+  border: 4px solid #ec5242;
+  width: 140px;
+  text-align: center;
 }

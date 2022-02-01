@@ -174,3 +174,17 @@ section hr {
 .conf h4 {
   font-weight: bold;
 }
+
+/* partner */
+#partner {
+  background-color: #272a31;
+  color: #ffffff;
+}
+
+.partner-img {
+  width: 80px;
+}
+
+#partner .col {
+  flex-grow: 0;
+}

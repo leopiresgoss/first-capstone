@@ -21,7 +21,8 @@
 #nav-join-btn,
 .before-title,
 #headline .title,
-#program h6 {
+#program h6,
+.details .about {
   color: #ec5242;
 }
 
@@ -43,6 +44,14 @@
   border: 4px solid #ec5242;
   width: 140px;
   text-align: center;
+}
+
+section hr {
+  margin: 0;
+  width: 10%;
+  height: 3px;
+  margin: 0.5rem 0;
+  color: #ec5242;
 }
 
 /* headline */
@@ -97,5 +106,30 @@
   padding: 16px 16px;
 }
 
+/* speakers */
+#speakers img {
+  width: 160px;
+  height: 160px;
+}
+
+.details .name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.details .about {
+  font-size: 0.7rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.details hr {
+  color: #272a31;
+}
+
+.details .more-info {
+  font-size: 0.7rem;
+  margin: 0;
+}
 
 

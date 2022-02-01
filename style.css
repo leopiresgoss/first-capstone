@@ -21,7 +21,21 @@
   color: #ec5242;
 }
 
+body {
+  position: relative;
+}
+
 /* navbar */
+header {
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  width: 100%;
+  background: none;
+}
+
 .navbar {
   background-color: #eeeeee;
 }
@@ -52,14 +66,23 @@ section hr {
   width: 10%;
   height: 3px;
   margin: 0.5rem 0;
+  opacity: inherit;
   color: #ec5242;
 }
 
 /* headline */
 #headline {
+  padding-top: 57px;
   background-color: #eeeeee;
-  min-height: 400px;
+  min-height: 500px;
 }
+
+#headline.index {
+  background: 
+  linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
+  url('images/elderly.jpg') center center / cover no-repeat;
+}
+
 
 #headline .content {
   height: 100%;
@@ -67,6 +90,8 @@ section hr {
 
 #headline .title {
   font-family: 'COCOGOOSE', sans-serif;
+  font-weight: bold;
+
 }
 
 .description {
@@ -74,8 +99,8 @@ section hr {
   border: 2px solid #ffffff;
 }
 
-.data {
-  font-family: 'Cocogoose-Pro', sans-serif;
+.data > *{
+  font-family: 'COCOGOOSE', sans-serif;
   color: #272a31be;
 }
 
@@ -194,6 +219,7 @@ section hr {
 
 .partner-img {
   width: 80px;
+  filter: grayscale(100%);
 }
 
 #partner .col {

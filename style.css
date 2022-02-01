@@ -6,11 +6,6 @@
   font-family: lato, sans-serif;
 }
 
-@font-face {
-  font-family: 'Cocogoose-Pro';
-  src: url('cocogoose/Cocogoose_trial.otf');
-}
-
 .first-color,
 .navbar-light .navbar-nav .nav-link {
   color: #272a31;
@@ -34,6 +29,12 @@
 .navbar-light .navbar-toggler {
   border: none;
   font-size: 2em;
+}
+
+.logo {
+  width: 100%;
+  margin: 2rem 0;
+  max-width: 200px;
 }
 
 .nav-link {
@@ -65,7 +66,7 @@ section hr {
 }
 
 #headline .title {
-  font-family: 'Cocogoose-Pro', sans-serif;
+  font-family: 'COCOGOOSE', sans-serif;
 }
 
 .description {
@@ -151,6 +152,15 @@ section hr {
   font-weight: bold;
 }
 
+.about-img {
+  max-width: 450px;
+}
+
+#about img {
+  width: 100%;
+  max-width: 450px;
+}
+
 .description.about {
   background-color: #ffffff;
 }
@@ -194,4 +204,10 @@ section hr {
 footer p {
   margin: 0;
   color: #272a31c2;
+}
+
+.org-log {
+  width: 100%;
+  min-width: 130px;
+  max-width: 350px;
 }

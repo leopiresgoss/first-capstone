@@ -11,6 +11,19 @@
   color: #272a31;
 }
 
+.title {
+  font-weight: bold;
+}
+
+.conf h4 {
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;
+  color: #272a31c2;
+}
+
 .sec-color,
 .navbar-light .navbar-nav .nav-link.sec-color,
 #nav-join-btn,
@@ -34,10 +47,7 @@ header {
 .navbar {
   width: 100%;
   background: none;
-}
-
-.navbar {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 .navbar-light .navbar-toggler {
@@ -51,10 +61,6 @@ header {
   max-width: 200px;
 }
 
-.nav-link {
-  font: 2rem;
-}
-
 #nav-join-btn {
   border: 4px solid #ec5242;
   width: 140px;
@@ -62,10 +68,9 @@ header {
 }
 
 section hr {
-  margin: 0;
   width: 10%;
   height: 3px;
-  margin: 0.5rem 0;
+  margin: 0.2em 0 0.5em;
   opacity: inherit;
   color: #ec5242;
 }
@@ -73,16 +78,15 @@ section hr {
 /* headline */
 #headline {
   padding-top: 57px;
-  background-color: #eeeeee;
+  background-color: #eee;
   min-height: 500px;
 }
 
 #headline.index {
-  background: 
-  linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
-  url('images/elderly.jpg') center center / cover no-repeat;
+  background:
+    linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
+    url('images/elderly.jpg') center center / cover no-repeat;
 }
-
 
 #headline .content {
   height: 100%;
@@ -91,15 +95,14 @@ section hr {
 #headline .title {
   font-family: 'COCOGOOSE', sans-serif;
   font-weight: bold;
-
 }
 
 .description {
   padding: 16px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
 }
 
-.data > *{
+.data > * {
   font-family: 'COCOGOOSE', sans-serif;
   color: #272a31be;
 }
@@ -111,10 +114,6 @@ section hr {
 
 #program > * {
   color: #d3d3d3;
-}
-
-.title {
-  font-weight: bold;
 }
 
 .box {
@@ -138,7 +137,7 @@ section hr {
 
 .join-conference {
   background-color: #ec5242;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
   padding: 16px 16px;
 }
@@ -171,6 +170,7 @@ section hr {
 }
 
 /* about page */
+
 /* headline */
 .mail-link {
   color: #272a31;
@@ -187,13 +187,19 @@ section hr {
 }
 
 .description.about {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 /* about */
+
 /* images from https://unsplash.com/@antenna */
+
+#img-cont {
+  width: 100%;
+}
+
 .conf {
-  color: #ffffff;
+  color: #fff;
   height: 200px;
   max-width: 400px;
 }
@@ -206,15 +212,11 @@ section hr {
   background: linear-gradient(180.45deg, rgba(236, 83, 66, 0.582) 0.75%, rgba(236, 38, 38, 0.66) 120%), url("images/conference/conf-two.jpg") center center / cover no-repeat;
 }
 
-.conf h4 {
-  font-weight: bold;
-}
-
 /* partner */
 #partner {
   min-height: 300px;
   background-color: #272a31;
-  color: #ffffff;
+  color: #fff;
 }
 
 .partner-img {
@@ -227,11 +229,6 @@ section hr {
 }
 
 /* footer */
-footer p {
-  margin: 0;
-  color: #272a31c2;
-}
-
 .org-log {
   width: 100%;
   min-width: 130px;

@@ -143,4 +143,11 @@ section hr {
   margin: 0;
 }
 
+/* about */
+/* headline */
+.mail-link {
+  color: #272a31;
+  font-weight: bold;
+}
+
 

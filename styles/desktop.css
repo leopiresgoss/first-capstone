@@ -6,7 +6,6 @@
   
   .dark-bar {
     min-height: 32px;
-    display: block;
     width: 100%;
     background-color: #272a31;
     margin: 0;
@@ -23,5 +22,13 @@
 
   .link {
     text-decoration: none;
+  }
+
+  #navbarSupportedContent {
+    flex: 1;
+  }
+
+  .logo {
+    width: 320px;
   }
 }

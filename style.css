@@ -177,6 +177,7 @@ section hr {
 
 /* partner */
 #partner {
+  min-height: 300px;
   background-color: #272a31;
   color: #ffffff;
 }
@@ -187,4 +188,10 @@ section hr {
 
 #partner .col {
   flex-grow: 0;
+}
+
+/* footer */
+footer p {
+  margin: 0;
+  color: #272a31c2;
 }

@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: lato, sans-serif;
+}
+
+.first-color,
+.navbar-light .navbar-nav .nav-link {
+  color: #272a31;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.conf h4 {
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;
+  color: #272a31c2;
+}
+
+.sec-color,
+.navbar-light .navbar-nav .nav-link.sec-color,
+#nav-join-btn,
+.before-title,
+#headline .title,
+#program h4,
+.details .about {
+  color: #ec5242;
+}
+
+body {
+  position: relative;
+}
+
+/* navbar */
+header {
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  width: 100%;
+  background: none;
+  background-color: #eee;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  font-size: 2em;
+}
+
+.logo {
+  width: 100%;
+  margin: 2rem 0;
+  max-width: 200px;
+}
+
+#nav-join-btn {
+  border: 4px solid #ec5242;
+  width: 140px;
+  text-align: center;
+}
+
+section hr {
+  width: 10%;
+  height: 3px;
+  margin: 0.2em 0 0.5em;
+  opacity: inherit;
+  color: #ec5242;
+}
+
+/* headline */
+#headline {
+  padding-top: 57px;
+  background-color: #eee;
+  min-height: 500px;
+}
+
+#headline.index {
+  background:
+    linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
+    url('images/elderly.jpg') center center / cover no-repeat;
+}
+
+#headline .content {
+  height: 100%;
+}
+
+#headline .title {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: bold;
+}
+
+.description {
+  padding: 16px;
+  border: 2px solid #fff;
+}
+
+.data > * {
+  font-family: 'COCOGOOSE', sans-serif;
+  color: #272a31be;
+}
+
+/* main program */
+#program {
+  background-color: #272a31;
+}
+
+#program > * {
+  color: #d3d3d3;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  grid-template-columns: 50px 100px auto;
+  gap: 8px;
+}
+
+.icon img {
+  width: 40px;
+}
+
+#program h4 {
+  font-weight: bold;
+}
+
+#program p {
+  width: 100%;
+}
+
+.join-conference {
+  background-color: #ec5242;
+  color: #fff;
+  font-weight: bold;
+  padding: 16px 16px;
+}
+
+/* speakers */
+#speakers img {
+  width: 160px;
+  height: 160px;
+}
+
+.details .name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.details .about {
+  font-size: 0.7rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.details hr,
+#about > * {
+  color: #272a31;
+}
+
+.details .more-info {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+/* about page */
+
+/* headline */
+.mail-link {
+  color: #272a31;
+  font-weight: bold;
+}
+
+.about-img {
+  max-width: 450px;
+}
+
+#about img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.description.about {
+  background-color: #fff;
+}
+
+/* about */
+
+/* images from https://unsplash.com/@antenna */
+
+#img-cont {
+  width: 100%;
+}
+
+.conf {
+  color: #fff;
+  height: 200px;
+  max-width: 400px;
+}
+
+#conf-1 {
+  background: linear-gradient(180.45deg, rgba(236, 83, 66, 0.582) 0.75%, rgba(236, 38, 38, 0.66) 120%), url("images/conference/conf-one.jpg") center center / cover no-repeat;
+}
+
+#conf-2 {
+  background: linear-gradient(180.45deg, rgba(236, 83, 66, 0.582) 0.75%, rgba(236, 38, 38, 0.66) 120%), url("images/conference/conf-two.jpg") center center / cover no-repeat;
+}
+
+/* partner */
+#partner {
+  min-height: 300px;
+  background-color: #272a31;
+  color: #fff;
+}
+
+.partner-img {
+  width: 80px;
+  filter: grayscale(100%);
+}
+
+#partner .col {
+  flex-grow: 0;
+}
+
+/* footer */
+.org-log {
+  width: 100%;
+  min-width: 130px;
+  max-width: 350px;
+}

@@ -87,7 +87,7 @@ section hr {
   color: #d3d3d3;
 }
 
-#program .title {
+.title {
   font-weight: bold;
 }
 
@@ -134,7 +134,8 @@ section hr {
   margin: 0;
 }
 
-.details hr {
+.details hr,
+#about > * {
   color: #272a31;
 }
 
@@ -143,11 +144,16 @@ section hr {
   margin: 0;
 }
 
-/* about */
+/* about page */
 /* headline */
 .mail-link {
   color: #272a31;
   font-weight: bold;
 }
 
+.description.about {
+  background-color: #ffffff;
+}
+
+/* about */
 

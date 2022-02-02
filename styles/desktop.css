@@ -27,6 +27,7 @@
 
   #navbarSupportedContent {
     flex: 1;
+    position: static;
   }
 
   .logo {

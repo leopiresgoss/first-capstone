@@ -61,6 +61,7 @@ header {
 .navbar {
   width: 100%;
   background: none;
+  box-shadow: none;
 }
 
 .navbar-light .navbar-toggler {

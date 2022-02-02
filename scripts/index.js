@@ -6,6 +6,41 @@ const speakers = [
     img: 'images/speakers/avatar-amanda.jpg',
     altImg: ''
   },
+  {
+    name: "Nicholas C. Curley",
+    about: 'CEO of HealthHome',
+    moreInfo: 'Nicholas love for his grandparents inspired him to build HealthHome, a startup focused on improving the elderly care.',
+    img: 'images/speakers/nicholas.jpg',
+    altImg: ''
+  },
+  {
+    name: "Nayla Navarro Arredondo",
+    about: 'Elderly Care Expert',
+    moreInfo: 'Nayla is a Elderly Care Expert for 10 years and a consultant at Santiago Hospital',
+    img: 'images/speakers/nayla.jpg',
+    altImg: ''
+  },
+  {
+    name: "Lizzie Westenbrink",
+    about: 'Elderly Care Consultant at WHO',
+    moreInfo: 'Lizzy is one of the most famous elderly care consultant in Europe',
+    img: 'images/speakers/lizzie.jpg',
+    altImg: ''
+  },
+  {
+    name: "Yair Medina Leal",
+    about: 'Professor of Elderly Care at Harvard University',
+    moreInfo: 'Yair has been lecturing at Harvard since 2009. Now, his devoted to help sillicon valley startups to improve the elderly care',
+    img: 'images/speakers/yair.jpg',
+    altImg: ''
+  },
+  {
+    name: "Nicolai N. Vestergaard",
+    about: 'EC Internation Organization Expert',
+    moreInfo: 'Nicolai is one of the most influent experts in elderly care. His love to the aged one inspired him to build this conference',
+    img: 'images/speakers/nicolai.jpg',
+    altImg: ''
+  },
 ];
 
 // create elements, and add classes and innerHTML to them
@@ -39,7 +74,7 @@ function columnGenerator(speaker) {
   const name = elementGenerator('h5', 'name', speaker.name);
   const about = elementGenerator('p', 'about', speaker.about);
   const hr = document.createElement('hr');
-  const moreInfo = elementGenerator('p', 'more-info', speakers.moreInfo);
+  const moreInfo = elementGenerator('p', 'more-info', speaker.moreInfo);
   details.append(name, about, hr, moreInfo);
 
   col.append(img, details);

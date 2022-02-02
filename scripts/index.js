@@ -99,5 +99,9 @@ function speakerCards(speakers) {
 
 // add cards to speakers section
 const speakersSection = document.querySelector('#speakers');
-const cards = speakerCards(speakers);
-speakersSection.appendChild(cards);
+
+// it will work only in index.html
+if (speakersSection) {
+  const cards = speakerCards(speakers);
+  speakersSection.appendChild(cards);
+}

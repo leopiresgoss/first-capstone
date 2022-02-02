@@ -44,9 +44,23 @@ header {
   top: 0;
 }
 
+#navbarSupportedContent {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 50%;
+}
+
+#close-btn {
+  top: 1rem;
+  right: 1rem;
+}
+
 .navbar {
   width: 100%;
   background: none;
+  box-shadow: none;
 }
 
 .navbar-light .navbar-toggler {

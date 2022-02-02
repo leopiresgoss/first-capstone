@@ -3,7 +3,7 @@
   header {
     position: static;
   }
-  
+
   .dark-bar {
     min-height: 32px;
     width: 100%;
@@ -37,8 +37,8 @@
   #headline {
     min-height: calc(100vh - 124px);
     background:
-    linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
-    url('/images/elderly-lg.jpg') center center / cover no-repeat;
+      linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
+      url('/images/elderly-lg.jpg') center center / cover no-repeat;
     padding: 0;
   }
 
@@ -49,7 +49,7 @@
   /* program */
   #program {
     min-height: 50vh;
-  } 
+  }
 
   #program .cards {
     min-height: 25vh;
@@ -89,16 +89,32 @@
     max-width: 400px;
   }
 
-  /* footer - about */
+  /* footer */
   footer.about {
-    background-color: #272a31;;
+    background-color: #272a31;
+  }
+
+  .org-log {
+    min-width: 340px;
+    padding-right: 0;
   }
 
   footer.about .org-log {
-    filter: brightness(0) invert(1);;
+    filter: brightness(0) invert(1);
   }
 
   footer.about p {
     color: #eee;
+  }
+
+  .logo-cont {
+    flex-grow: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pad {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
   }
 }

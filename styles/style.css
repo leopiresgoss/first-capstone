@@ -97,7 +97,7 @@ section hr {
 #headline.index {
   background:
     linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
-    url('/images/elderly.jpg') center center / cover no-repeat;
+    url('../images/elderly.jpg') center center / cover no-repeat;
 }
 
 #headline .content {
@@ -225,13 +225,13 @@ section hr {
 #conf-1 {
   background:
     linear-gradient(180.45deg, rgba(236, 83, 66, 0.582) 0.75%, rgba(236, 38, 38, 0.66) 120%),
-    url("/images/conference/conf-one.jpg") center center / cover no-repeat;
+    url('../images/conference/conf-one.jpg') center center / cover no-repeat;
 }
 
 #conf-2 {
   background:
     linear-gradient(180.45deg, rgba(236, 83, 66, 0.582) 0.75%, rgba(236, 38, 38, 0.66) 120%),
-    url("/images/conference/conf-two.jpg") center center / cover no-repeat;
+    url('../images/conference/conf-two.jpg') center center / cover no-repeat;
 }
 
 /* partner */

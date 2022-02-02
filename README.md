@@ -20,7 +20,7 @@ Access the page at: https://leopiresgoss.github.io/first-capstone/
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
+- Bootstrap v.5.1
 
 ## Author
 

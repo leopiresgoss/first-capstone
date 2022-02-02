@@ -1,0 +1,120 @@
+@media screen and (min-width: 768px) {
+  /* header */
+  header {
+    position: static;
+  }
+
+  .dark-bar {
+    min-height: 32px;
+    width: 100%;
+    background-color: #272a31;
+    margin: 0;
+    height: 100%;
+  }
+
+  .links {
+    flex: 1;
+    padding: 0;
+  }
+
+  .links li {
+    list-style: none;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  #navbarSupportedContent {
+    flex: 1;
+  }
+
+  .logo {
+    width: 320px;
+  }
+
+  /* headline */
+  #headline {
+    min-height: calc(100vh - 124px);
+    background:
+      linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
+      url('/images/elderly-lg.jpg') center center / cover no-repeat;
+    padding: 0;
+  }
+
+  #headline h1 {
+    font-size: 3em;
+  }
+
+  /* program */
+  #program {
+    min-height: 50vh;
+  }
+
+  #program .cards {
+    min-height: 25vh;
+  }
+
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 52px 34px 1fr;
+    flex-grow: 0;
+    max-width: 300px;
+  }
+
+  /* speakers */
+  #partner .col {
+    flex-basis: auto;
+  }
+
+  .partner-img {
+    width: 120px;
+  }
+
+  /* about */
+
+  /* past events */
+  #past-events {
+    min-height: 50vh;
+  }
+
+  #past-events .img-cont {
+    min-height: calc(50vh - 119px);
+  }
+
+  #past-events .conf {
+    height: 100%;
+    min-height: 240px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* footer */
+  footer.about {
+    background-color: #272a31;
+  }
+
+  .org-log {
+    min-width: 340px;
+    padding-right: 0;
+  }
+
+  footer.about .org-log {
+    filter: brightness(0) invert(1);
+  }
+
+  footer.about p {
+    color: #eee;
+  }
+
+  .logo-cont {
+    flex-grow: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pad {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+}

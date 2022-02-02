@@ -14,22 +14,42 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/08eb88215f.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/desktop.css">
+  
+  <title>ELDERLY CARE GLOBAL CONFERENCE 2022 | About</title>
 </head>
 <body>
   <header>
-    <!-- TODO: add div for social media and choose language for desktop -->
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container-fluid">
+    <div class="dark-bar d-none d-md-flex align-items-center pad px-3 px-lg-5">
+      <ul class="links d-flex gap-4 justify-content-end mb-0">
+        <li>
+          <a href="#" class="link text-light"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link text-light"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="link text-light">English</a>
+        </li>
+        <li>
+          <a href="#" class="link text-light">My Page</a>
+        </li>
+        <li>
+          <a href="#" class="link text-light">Logout</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent bg-md-light shadow-sm">
+      <div class="container-fluid p-0">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars first-color"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a class="navbar-brand" href="index.html">
+        <div class="collapse navbar-collapse pad px-3 px-lg-5" id="navbarSupportedContent">
+          <a class="navbar-brand pe-ld-5" href="index.html">
             <img class="logo" src="images/logos/ec-3.svg" alt="Home">
           </a>
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav links justify-content-end gap-md-2 gap-lg-5 ps-md-4 pe-md-2 pe-lg-5">
             <li class="nav-item">
               <a class="nav-link sec-color" href="about.html">About</a>
             </li>
@@ -43,9 +63,9 @@
               <a class="nav-link" href="#">News</a>
             </li>
           </ul>
-          <ul class="navbar-nav me-auto mt-2">
+          <ul class="navbar-nav mt-2 mt-md-0 ps-lg-5">
             <li class="nav-item">
-              <a class="nav-link" id="nav-join-btn" href="#">CC Campaign</a>
+              <a class="nav-link" id="nav-join-btn" href="#">EC Campaign</a>
             </li>
           </ul>
         </div>
@@ -53,34 +73,34 @@
     </nav>
   </header>
   <main>
-    <section id="headline" class="container-fluid px-3 d-flex align-items-center">
+    <section id="headline" class="container-fluid pad px-3 px-lg-5  d-flex align-items-center">
       <div class="content d-flex flex-column align-items-center">
         <h5 class="before-title mt-4">"Hello! Sharing world!"</h5>
         <h1 class="title mb-4 text-center">ELDERLY CARE<br>GLOBAL CONFERENCE 2022</h1>
-        <p class="description about mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorem vel molestiae saepe soluta laborum porro blanditiis similique nam quas maiores placeat, a ipsum. Voluptatem dolorum numquam itaque qui vel.</p>
+        <p class="description about mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorem vel molestiae saepe soluta laborum porro blanditiis similique nam quas maiores placeat, a ipsum. Voluptatem dolorum numquam itaque qui vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus vel iure libero praesentium voluptatem delectus asperiores aliquam debitis itaque totam, veniam laborum. Voluptatibus veniam, ab nisi nulla tempore eligendi veritatis.</p>
         <div class="info d-flex flex-column align-items-center">
-          <p class="text-center mb-0">Please contact us per EMail for any further questions about EC Global Conference 2022!</p>
+          <p class="text-center mb-0">Please contact us per Email for any further questions about EC Global Conference 2022!</p>
           <a class="mb-4 mail-link" href="mailto:ecconference2022@ec.org">ecconference2022@ec.org</a>
         </div>
       </div>
     </section>
-    <section id="about" class="container-fluid px-3 border-bottom">
+    <section id="about" class="container-fluid pad px-3 px-lg-5 border-bottom">
       <div class="d-flex flex-column align-items-center">
         <h2 class="title pt-4 text-center">EC Global<br>Conference 2022 Logo</h2>
         <hr>
       </div>
-      <div class="row row-cols-1 px-3">
+      <div class="row row-cols-1 pad px-3 px-lg-5 px-xl-5">
         <div class="col">
           <p class="text-center mt-2 mb-4">The logo of EC Global Conference 2022 was decided through the logo competition from 8. June to 7. July</p>
         </div>
       </div>
-      <div id="img-cont" class="row row-cols-1 px-3 justify-content-center">
+      <div id="img-cont" class="row row-cols-1 pad px-3 px-lg-5 px-xl-5 justify-content-center">
         <div class="about-img col border mb-5">
           <img src="images/logos/elderly_care_2.svg" alt="EC Global Conference Logo">
         </div>
       </div>
     </section>
-    <section id="past-events" class="container-fluid px-3">
+    <section id="past-events" class="container-fluid pad px-3 px-lg-5 px-xl-5">
       <div class="d-flex flex-column align-items-center">
         <h2 class="title pt-4 text-center">See the past EC Global Conferences</h2>
         <hr>
@@ -90,18 +110,18 @@
           <p class="text-center mt-2 mb-4">Take a look at the last two EC Global Conferences which took place in Santiago and in Cape Town</p>
         </div>
       </div>
-      <div class="row row-cols-1 px-3 mb-4 justify-content-center">
+      <div class="img-cont row row-cols-1 px-3 mb-4 justify-content-center gap-md-4 align-items-center">
         <div class="col conf d-flex flex-column justify-content-center" id="conf-1">
           <h4 class="text-center">2021</h4>
           <h6 class="text-center">EC Global Conference 2021 in Santiago</h6>
         </div>
-        <div class="col conf mt-4 d-flex flex-column justify-content-center" id="conf-2">
-          <h4 class="text-center">2021</h4>
-          <h6 class="text-center">EC Global Conference 2021 in Santiago</h6>
+        <div class="col conf mt-4 m-md-0 d-flex flex-column justify-content-center" id="conf-2">
+          <h4 class="text-center">2020</h4>
+          <h6 class="text-center">EC Global Conference 2020 in Cape Town</h6>
         </div>
       </div>
     </section>
-    <section id="partner" class="container-fluid px-3 pb-4 d-flex flex-column justify-content-between">
+    <section id="partner" class="container-fluid px-3 pb-4 d-flex d-md-none flex-column justify-content-between">
       <div class="d-flex flex-column align-items-center">
         <h2 class="title pt-4">Partner</h2>
         <hr>
@@ -127,14 +147,15 @@
       </div>
     </section>
   </main>
-  <footer class="container-fluid px-3 py-4">
+  <footer class="about container-fluid pad px-3 px-lg-5 px-xl-5 py-4 py-md-5">
     <div class="row">
-      <div class="col">
+      <div class="col logo-cont">
         <img class="org-log" src="images/logos/ec.svg" alt="Elderly Care Internation Organization">
       </div>
       <div class="col">
-        <p>2022 Elderly Care International Organization</p>
-        <p>Some Rights Reserved</p>
+        <p class="fw-bold">2022 Elderly Care International Organization</p>
+        <p class="fw-bold">Some Rights Reserved</p>
+        <p class="d-none d-md-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dolor esse mollitia deleniti ducimus nihil aut aliquid aperiam blanditiis?</p>
       </div>
     </div>
   </footer>

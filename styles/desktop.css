@@ -2,6 +2,7 @@
   /* header */
   header {
     position: static;
+    background-color: #fff;
   }
 
   .dark-bar {

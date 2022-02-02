@@ -50,6 +50,7 @@ header {
   right: 0;
   left: 0;
   min-height: 50%;
+  background-color: #fff;
 }
 
 #close-btn {

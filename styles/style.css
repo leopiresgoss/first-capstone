@@ -170,9 +170,10 @@ section hr {
 }
 
 .details .about {
-  font-size: 0.7rem;
+  font-size: 0.8em;
   font-style: italic;
   margin: 0;
+  max-width: 300px;
 }
 
 .details hr,
@@ -181,8 +182,9 @@ section hr {
 }
 
 .details .more-info {
-  font-size: 0.7rem;
+  font-size: 0.9em;
   margin: 0;
+  max-width: 300px;
 }
 
 /* about page */

@@ -63,4 +63,11 @@
   }
 
   /* speakers */
+  #partner .col {
+    flex-basis: auto;
+  }
+
+  .partner-img {
+    width: 120px;
+  }
 }

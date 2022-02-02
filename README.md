@@ -4,7 +4,9 @@
 
 > My first capstone project developed at Microverse.
 
-![screenshot]()
+![screenshot of desktop version](images/readme-img/desktop.png)
+
+![screenshot of mobile version](images/readme-img/mobile.png)
 
 The main objective was to develop the home and about pages based on CC Global Summit 2015 website.
 As we could choose the topic for this project, I came up with the idea to create a conference website about elderly care. I selected this topic because it is necessary to improve elderly health care as people are getting older. 

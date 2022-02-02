@@ -88,4 +88,17 @@
     width: 100%;
     max-width: 400px;
   }
+
+  /* footer - about */
+  footer.about {
+    background-color: #272a31;;
+  }
+
+  footer.about .org-log {
+    filter: brightness(0) invert(1);;
+  }
+
+  footer.about p {
+    color: #eee;
+  }
 }

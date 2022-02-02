@@ -1,45 +1,45 @@
 const speakers = [
   {
-    name: "Amanda Oliveira",
+    name: 'Amanda Oliveira',
     about: 'Professor of Elderly Care at University of Sao Paulo',
     moreInfo: 'Amanda, author of the best-seller: "Learning from the aged ones", is a reference to using storytelling to improve the relationship with the elderly.',
     img: 'images/speakers/avatar-amanda.jpg',
-    altImg: ''
+    altImg: '',
   },
   {
-    name: "Nicholas C. Curley",
+    name: 'Nicholas C. Curley',
     about: 'CEO of HealthHome',
     moreInfo: 'Nicholas love for his grandparents inspired him to build HealthHome, a startup focused on improving the elderly care.',
     img: 'images/speakers/nicholas.jpg',
-    altImg: ''
+    altImg: '',
   },
   {
-    name: "Nayla Navarro Arredondo",
+    name: 'Nayla Navarro Arredondo',
     about: 'Elderly Care Expert',
     moreInfo: 'Nayla is a Elderly Care Expert for 10 years and a consultant at Santiago Hospital',
     img: 'images/speakers/nayla.jpg',
-    altImg: ''
+    altImg: '',
   },
   {
-    name: "Lizzie Westenbrink",
+    name: 'Lizzie Westenbrink',
     about: 'Elderly Care Consultant at WHO',
     moreInfo: 'Lizzy is one of the most famous elderly care consultant in Europe',
     img: 'images/speakers/lizzie.jpg',
-    altImg: ''
+    altImg: '',
   },
   {
-    name: "Yair Medina Leal",
+    name: 'Yair Medina Leal',
     about: 'Professor of Elderly Care at Harvard University',
     moreInfo: 'Yair has been lecturing at Harvard since 2009. Now, his devoted to help sillicon valley startups to improve the elderly care',
     img: 'images/speakers/yair.jpg',
-    altImg: ''
+    altImg: '',
   },
   {
-    name: "Nicolai N. Vestergaard",
+    name: 'Nicolai N. Vestergaard',
     about: 'EC Internation Organization Expert',
     moreInfo: 'Nicolai is one of the most influent experts in elderly care. His love to the aged one inspired him to build this conference',
     img: 'images/speakers/nicolai.jpg',
-    altImg: ''
+    altImg: '',
   },
 ];
 
@@ -47,17 +47,17 @@ const speakers = [
 function elementGenerator(type, classes, innerHTML) {
   const elem = document.createElement(type);
 
-  const classArr = classes.split(" ");
-  classArr.forEach(cl => {
+  const classArr = classes.split(' ');
+  classArr.forEach((cl) => {
     elem.classList.add(cl);
   });
 
   if (innerHTML) {
     elem.innerHTML = innerHTML;
-  };
+  }
 
   return elem;
-};
+}
 
 // create column for each speaker
 function columnGenerator(speaker) {
@@ -86,8 +86,8 @@ function columnGenerator(speaker) {
 function speakerCards(speakers) {
   const cards = elementGenerator('div', 'cards my-2');
   const row = elementGenerator('div', 'row row-cols-1 row-cols-md-2 gap-2 gap-md-0 mt-2 justify-content-between');
-  
-  speakers.forEach(speaker => {
+
+  speakers.forEach((speaker) => {
     const col = columnGenerator(speaker);
     row.appendChild(col);
   });
@@ -95,7 +95,7 @@ function speakerCards(speakers) {
   cards.appendChild(row);
 
   return cards;
-};
+}
 
 // add cards to speakers section
 const speakersSection = document.querySelector('#speakers');

@@ -28,7 +28,7 @@ function elementGenerator(type, classes, innerHTML) {
 function columnGenerator(speaker) {
   // column
   const col = elementGenerator('div', 'col col-md-6 mt-1 mt-md-4 d-flex gap-2 align-items-center');
-  
+
   // img
   const img = elementGenerator('img', 'speaker-img');
   img.src = speaker.img;
@@ -64,5 +64,5 @@ function speakerCards(speakers) {
 
 // add cards to speakers section
 const speakersSection = document.querySelector('#speakers');
-const cards = speakerCards(speakers)
-speakersSection.appendChild(cards)
+const cards = speakerCards(speakers);
+speakersSection.appendChild(cards);

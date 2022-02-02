@@ -39,5 +39,10 @@
     background:
     linear-gradient(180deg, rgba(238, 238, 238, 0.9) 0.96%, rgba(238, 238, 238, 0.9) 120%),
     url('/images/elderly-lg.jpg') center center / cover no-repeat;
+    padding: 0;
+  }
+
+  #headline h1 {
+    font-size: 3em;
   }
 }

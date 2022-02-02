@@ -110,6 +110,10 @@ section hr {
   background-color: #272a31;
 }
 
+#program .title {
+  color: #fff;
+}
+
 #program > * {
   color: #d3d3d3;
 }

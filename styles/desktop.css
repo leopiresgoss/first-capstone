@@ -45,4 +45,20 @@
   #headline h1 {
     font-size: 3em;
   }
+
+  /* program */
+  #program {
+    min-height: 50vh;
+  } 
+
+  #program .cards {
+    min-height: 25vh;
+  }
+
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 52px 34px 1fr;
+    flex-grow: 0;
+    max-width: 300px;
+  }
 }

@@ -62,7 +62,7 @@ function elementGenerator(type, classes, innerHTML) {
 // create column for each speaker
 function columnGenerator(speaker) {
   // column
-  const col = elementGenerator('div', 'col col-md-6 mt-1 mt-md-4 d-flex gap-2 align-items-center');
+  const col = elementGenerator('li', 'col col-md-6 mt-1 mt-md-4 d-flex gap-2 align-items-center');
 
   // img
   const img = elementGenerator('img', 'speaker-img');
@@ -85,7 +85,7 @@ function columnGenerator(speaker) {
 // create cards div
 function speakerCards(speakers) {
   const cards = elementGenerator('div', 'cards my-2');
-  const row = elementGenerator('div', 'row row-cols-1 row-cols-md-2 gap-2 gap-md-0 mt-2 justify-content-between');
+  const row = elementGenerator('ul', 'row row-cols-1 row-cols-md-2 gap-2 gap-md-0 mt-2 justify-content-between');
 
   speakers.forEach((speaker) => {
     const col = columnGenerator(speaker);

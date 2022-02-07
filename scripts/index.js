@@ -103,5 +103,5 @@ const speakersSection = document.querySelector('#speakers');
 // it will work only in index.html
 if (speakersSection) {
   const cards = speakerCards(speakers);
-  speakersSection.appendChild(cards);
+  speakersSection.insertBefore(cards, speakersSection.children[1]);
 }

@@ -192,6 +192,10 @@ section hr {
   max-width: 300px;
 }
 
+.more-less button {
+  width: 100%;
+}
+
 /* about page */
 
 /* headline */

@@ -21,20 +21,47 @@ function appearAllSpeakers() {
   })
 }
 
+function lessBtn() {
+  const less = document.querySelector('.more-less button');
+  less.ariaLabel = "Close";
+  less.innerHTML = 'Less<i class="fas fa-chevron-up"></i>';
+
+  less.addEventListener('click', () => {
+    reduceSpeakers();
+    moreBtn();
+  })
+}
+
+function moreBtn() {
+  const more = document.querySelector('.more-less button');
+  more.ariaLabel = "More Speakers";
+  more.innerHTML = 'More<i class="fas fa-chevron-down"></i>';
+
+  more.addEventListener('click', () => {
+    appearAllSpeakers();
+    lessBtn();
+  })
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   if(checkWindowWidth()) {
     reduceSpeakers();
+    moreBtn();
   }
 })
 
-document.addEventListener('scroll', () => {
-  if(checkWindowWidth()) {
-    reduceSpeakers();
-  } else {
-    appearAllSpeakers();
-  }
-})
+
+
+// Fix when user scroll page late
+
+// document.addEventListener('scroll', () => {
+//   if(checkWindowWidth()) {
+//     reduceSpeakers();
+//   } else {
+//     appearAllSpeakers();
+//   }
+// })
 
 
 

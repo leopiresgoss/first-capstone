@@ -43,65 +43,72 @@ const speakers = [
   },
 ];
 
-// create elements, and add classes and innerHTML to them
-function elementGenerator(type, classes, innerHTML) {
-  const elem = document.createElement(type);
-
-  const classArr = classes.split(' ');
-  classArr.forEach((cl) => {
-    elem.classList.add(cl);
-  });
-
-  if (innerHTML) {
-    elem.innerHTML = innerHTML;
+class CardsRender {
+  constructor(speakers) {
+    this.speakers = speakers;
   }
 
-  return elem;
-}
+  // create elements, and add classes and innerHTML to them
+  #elementGenerator = (type, classes, innerHTML) => {
+    const elem = document.createElement(type);
 
-// create column for each speaker
-function columnGenerator(speaker) {
-  // column
-  const col = elementGenerator('div', 'col col-md-6 mt-1 mt-md-4 d-flex gap-2 align-items-center');
+    const classArr = classes.split(' ');
+    classArr.forEach((cl) => {
+      elem.classList.add(cl);
+    });
 
-  // img
-  const img = elementGenerator('img', 'speaker-img');
-  img.src = speaker.img;
-  img.alt = speaker.imgAlt;
+    if (innerHTML) {
+      elem.innerHTML = innerHTML;
+    }
 
-  // details
-  const details = elementGenerator('div', 'details d-flex flex-column');
-  const name = elementGenerator('h5', 'name', speaker.name);
-  const about = elementGenerator('p', 'about', speaker.about);
-  const hr = document.createElement('hr');
-  const moreInfo = elementGenerator('p', 'more-info', speaker.moreInfo);
-  details.append(name, about, hr, moreInfo);
+    return elem;
+  };
 
-  col.append(img, details);
+  // create column for each speaker
+  #columnGenerator = (speaker) => {
+    // column
+    const col = this.#elementGenerator('li', 'col col-md-6 mt-1 mt-md-4 d-flex gap-2 align-items-center');
 
-  return col;
-}
+    // img
+    const img = this.#elementGenerator('img', 'speaker-img');
+    img.src = speaker.img;
+    img.alt = speaker.imgAlt;
 
-// create cards div
-function speakerCards(speakers) {
-  const cards = elementGenerator('div', 'cards my-2');
-  const row = elementGenerator('div', 'row row-cols-1 row-cols-md-2 gap-2 gap-md-0 mt-2 justify-content-between');
+    // details
+    const details = this.#elementGenerator('div', 'details d-flex flex-column');
+    const name = this.#elementGenerator('h5', 'name', speaker.name);
+    const about = this.#elementGenerator('p', 'about', speaker.about);
+    const hr = document.createElement('hr');
+    const moreInfo = this.#elementGenerator('p', 'more-info', speaker.moreInfo);
+    details.append(name, about, hr, moreInfo);
 
-  speakers.forEach((speaker) => {
-    const col = columnGenerator(speaker);
-    row.appendChild(col);
-  });
+    col.append(img, details);
 
-  cards.appendChild(row);
+    return col;
+  }
 
-  return cards;
+  // create cards div
+  speakerCards = () => {
+    const cards = this.#elementGenerator('div', 'cards my-2');
+    const row = this.#elementGenerator('ul', 'row row-cols-1 row-cols-md-2 gap-4 gap-md-0 mt-2 justify-content-between');
+
+    this.speakers.forEach((speaker) => {
+      const col = this.#columnGenerator(speaker);
+      row.appendChild(col);
+    });
+
+    cards.appendChild(row);
+
+    return cards;
+  }
 }
 
 // add cards to speakers section
 const speakersSection = document.querySelector('#speakers');
+const classRender = new CardsRender(speakers);
 
 // it will work only in index.html
 if (speakersSection) {
-  const cards = speakerCards(speakers);
-  speakersSection.appendChild(cards);
+  const cards = classRender.speakerCards();
+  speakersSection.insertBefore(cards, speakersSection.children[1]);
 }

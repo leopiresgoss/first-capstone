@@ -90,7 +90,7 @@ class CardsRender {
   // create cards div
   speakerCards = () => {
     const cards = this.#elementGenerator('div', 'cards my-2');
-    const row = this.#elementGenerator('ul', 'row row-cols-1 row-cols-md-2 gap-2 gap-md-0 mt-2 justify-content-between');
+    const row = this.#elementGenerator('ul', 'row row-cols-1 row-cols-md-2 gap-4 gap-md-0 mt-2 justify-content-between');
 
     this.speakers.forEach((speaker) => {
       const col = this.#columnGenerator(speaker);

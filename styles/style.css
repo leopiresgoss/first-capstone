@@ -271,7 +271,7 @@ section hr {
   h1 {
     font-size: 1.2em;
   }
-  
+
   .box {
     grid-template-columns: 1fr;
   }
